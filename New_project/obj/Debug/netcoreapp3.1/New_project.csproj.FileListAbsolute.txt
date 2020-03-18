@@ -1,0 +1,11 @@
+F:\Git\Study\New_project\bin\Debug\netcoreapp3.1\New_project.exe
+F:\Git\Study\New_project\bin\Debug\netcoreapp3.1\New_project.deps.json
+F:\Git\Study\New_project\bin\Debug\netcoreapp3.1\New_project.runtimeconfig.json
+F:\Git\Study\New_project\bin\Debug\netcoreapp3.1\New_project.runtimeconfig.dev.json
+F:\Git\Study\New_project\bin\Debug\netcoreapp3.1\New_project.dll
+F:\Git\Study\New_project\bin\Debug\netcoreapp3.1\New_project.pdb
+F:\Git\Study\New_project\obj\Debug\netcoreapp3.1\New_project.csprojAssemblyReference.cache
+F:\Git\Study\New_project\obj\Debug\netcoreapp3.1\New_project.AssemblyInfoInputs.cache
+F:\Git\Study\New_project\obj\Debug\netcoreapp3.1\New_project.AssemblyInfo.cs
+F:\Git\Study\New_project\obj\Debug\netcoreapp3.1\New_project.dll
+F:\Git\Study\New_project\obj\Debug\netcoreapp3.1\New_project.pdb
