@@ -2,16 +2,16 @@
 
 namespace New_project
 {
-    public class A:
+    public class A
     {
         int i;
         public A(int a)
         {
             i=a;
         }
-        public geti()
+        public int geti()
         {
-            return i;
+            return 5;
         }
     }
     class Program

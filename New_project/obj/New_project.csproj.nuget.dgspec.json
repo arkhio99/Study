@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Git\\Study\\New_project\\New_project.csproj": {}
+    "F:\\git\\study\\new_project\\New_project.csproj": {}
   },
   "projects": {
-    "F:\\Git\\Study\\New_project\\New_project.csproj": {
+    "F:\\git\\study\\new_project\\New_project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Git\\Study\\New_project\\New_project.csproj",
+        "projectUniqueName": "F:\\git\\study\\new_project\\New_project.csproj",
         "projectName": "New_project",
-        "projectPath": "F:\\Git\\Study\\New_project\\New_project.csproj",
+        "projectPath": "F:\\git\\study\\new_project\\New_project.csproj",
         "packagesPath": "C:\\Users\\vladb\\.nuget\\packages\\",
-        "outputPath": "F:\\Git\\Study\\New_project\\obj\\",
+        "outputPath": "F:\\git\\study\\new_project\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\vladb\\AppData\\Roaming\\NuGet\\NuGet.Config"
