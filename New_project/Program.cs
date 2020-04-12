@@ -2,25 +2,57 @@
 
 namespace New_project
 {
-    public class A
-    {
-        int i;
-        public A(int a)
+    public class A{
+        public A()
         {
-            i=a;
         }
-        public int geti()
+        public void f()
         {
-            return 5;
+            System.Console.WriteLine("F from a");
+            func();
+        }
+        public virtual void func()
+        {
+            System.Console.WriteLine("func from a");
+        }
+    }
+
+    public class B:A{
+        public B()
+        {
+        }
+        public new void f()
+        {
+            System.Console.WriteLine("F from b");
+            func();
+            base.f();
+        }
+        public override void func()
+        {
+            System.Console.WriteLine("func from b");
+        }
+    }
+    public class C:B{
+        public C()
+        {
+        }
+        public new void f()
+        {
+            System.Console.WriteLine("F from c");
+            func();
+            base.f();
+        }
+        public override void func()
+        {
+            System.Console.WriteLine("func from c");
         }
     }
     class Program
     {
         static void Main(string[] args)
         {
-            Object o= new Object();
-            A a=(A)o;
-            System.Console.WriteLine(a.geti());
+            C c = new C();
+            c.f();
         }
     }
 }
