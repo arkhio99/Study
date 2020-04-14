@@ -2,20 +2,19 @@
 
 namespace New_project
 {
-    internal class A{
-        public Int32 i;
-        public A(Int32 _i)
+    sealed partial class A
+    {
+        partial void f(); 
+        public Int32 SayHi()
         {
-            i=_i;
+            f();
+            return 0;
         }
     }
-    
-    internal static class AExtension
-    {
-        public static void SayHi(this A a)
+    sealed partial class A{
+        partial void f()
         {
-            //for(int i=0;i<a.i;i++)
-            System.Console.WriteLine("Hi!");
+            System.Console.WriteLine("Hi");
         }
     }
 
@@ -23,10 +22,8 @@ namespace New_project
     {
         static void Main(string[] args)
         {
-            A a=new A(3);
-            a.SayHi();
-            A n=null;
-            n.SayHi();
+            A a = new A();
+            System.Console.WriteLine(a.SayHi());
         }
     }
 }
