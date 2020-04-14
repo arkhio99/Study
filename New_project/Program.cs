@@ -2,30 +2,50 @@
 
 namespace New_project
 {
-    struct point
-    {
-        public Int32 x,y;
-        public point(Int32 _x)
+    class A{
+        public Int32 i;
+        public A(Int32 _i)
         {
-            this=new point();
-            x=_x;
+            i=_i;
+        }
+        public B ToB()
+        {
+            return new B(i);
         }
     }
-    class rectangle
+    class B
     {
-        public point lu,rd;
-        public rectangle()
+        public Int32 i;
+        internal B(Int32 _i)
         {
-            lu=new point();
-            rd=new point();
+            i=_i;
+        }
+        public B(A a)
+        {
+            i=a.i;
+        }
+        public Int32 ToInt32()
+        {
+            return i;
+        }
+        public static implicit operator B(A a)
+        {
+            return new B(a);
+        }
+        public static explicit operator Int32(B b)
+        {
+            return b.ToInt32();
         }
     }
     class Program
     {
         static void Main(string[] args)
         {
-            rectangle rectangle=new rectangle();
-            System.Console.WriteLine(rectangle.lu.x.ToString()+rectangle.lu.y.ToString());
+            A a=new A(3);
+            B b=a;
+            Int32 i=(Int32)b;
+            System.Console.WriteLine(b.i);
+            System.Console.WriteLine(i);
         }
     }
 }
