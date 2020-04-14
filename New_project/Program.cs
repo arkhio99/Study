@@ -12,6 +12,10 @@ namespace New_project
         {
             return new B(i);
         }
+        public static explicit operator A(B b)
+        {
+            return new A(b.i);
+        }
     }
     class B
     {
@@ -32,20 +36,22 @@ namespace New_project
         {
             return new B(a);
         }
-        public static explicit operator Int32(B b)
+        /*public static explicit operator Int32(B b)
         {
             return b.ToInt32();
-        }
+        }*/
     }
     class Program
     {
         static void Main(string[] args)
         {
             A a=new A(3);
-            B b=a;
-            Int32 i=(Int32)b;
-            System.Console.WriteLine(b.i);
-            System.Console.WriteLine(i);
+            B bFromAImp=a;
+            A aFromB=(A)bFromAImp;
+            B bFromAExp=(B)a;
+            System.Console.WriteLine(bFromAImp.i);
+            System.Console.WriteLine(aFromB.i);
+            System.Console.WriteLine(bFromAExp.i);
         }
     }
 }
