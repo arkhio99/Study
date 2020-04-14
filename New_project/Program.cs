@@ -2,57 +2,30 @@
 
 namespace New_project
 {
-    public class A{
-        public A()
+    struct point
+    {
+        public Int32 x,y;
+        public point(Int32 _x)
         {
-        }
-        public void f()
-        {
-            System.Console.WriteLine("F from a");
-            func();
-        }
-        public virtual void func()
-        {
-            System.Console.WriteLine("func from a");
+            this=new point();
+            x=_x;
         }
     }
-
-    public class B:A{
-        public B()
+    class rectangle
+    {
+        public point lu,rd;
+        public rectangle()
         {
-        }
-        public new void f()
-        {
-            System.Console.WriteLine("F from b");
-            func();
-            base.f();
-        }
-        public override void func()
-        {
-            System.Console.WriteLine("func from b");
-        }
-    }
-    public class C:B{
-        public C()
-        {
-        }
-        public new void f()
-        {
-            System.Console.WriteLine("F from c");
-            func();
-            base.f();
-        }
-        public override void func()
-        {
-            System.Console.WriteLine("func from c");
+            lu=new point();
+            rd=new point();
         }
     }
     class Program
     {
         static void Main(string[] args)
         {
-            C c = new C();
-            c.f();
+            rectangle rectangle=new rectangle();
+            System.Console.WriteLine(rectangle.lu.x.ToString()+rectangle.lu.y.ToString());
         }
     }
 }

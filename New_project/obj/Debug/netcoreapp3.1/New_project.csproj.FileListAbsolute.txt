@@ -9,3 +9,16 @@ F:\git\study\new_project\bin\Debug\netcoreapp3.1\New_project.dll
 F:\git\study\new_project\bin\Debug\netcoreapp3.1\New_project.pdb
 F:\git\study\new_project\obj\Debug\netcoreapp3.1\New_project.dll
 F:\git\study\new_project\obj\Debug\netcoreapp3.1\New_project.pdb
+C:\Users\PussyDominator\Documents\GitHub\Study\New_project\bin\Debug\netcoreapp3.1\New_project.exe
+C:\Users\PussyDominator\Documents\GitHub\Study\New_project\bin\Debug\netcoreapp3.1\New_project.deps.json
+C:\Users\PussyDominator\Documents\GitHub\Study\New_project\bin\Debug\netcoreapp3.1\New_project.runtimeconfig.json
+C:\Users\PussyDominator\Documents\GitHub\Study\New_project\bin\Debug\netcoreapp3.1\New_project.runtimeconfig.dev.json
+C:\Users\PussyDominator\Documents\GitHub\Study\New_project\bin\Debug\netcoreapp3.1\New_project.dll
+C:\Users\PussyDominator\Documents\GitHub\Study\New_project\bin\Debug\netcoreapp3.1\New_project.pdb
+C:\Users\PussyDominator\Documents\GitHub\Study\New_project\obj\Debug\netcoreapp3.1\New_project.csprojAssemblyReference.cache
+C:\Users\PussyDominator\Documents\GitHub\Study\New_project\obj\Debug\netcoreapp3.1\New_project.csproj.CoreCompileInputs.cache
+C:\Users\PussyDominator\Documents\GitHub\Study\New_project\obj\Debug\netcoreapp3.1\New_project.AssemblyInfoInputs.cache
+C:\Users\PussyDominator\Documents\GitHub\Study\New_project\obj\Debug\netcoreapp3.1\New_project.AssemblyInfo.cs
+C:\Users\PussyDominator\Documents\GitHub\Study\New_project\obj\Debug\netcoreapp3.1\New_project.dll
+C:\Users\PussyDominator\Documents\GitHub\Study\New_project\obj\Debug\netcoreapp3.1\New_project.pdb
+C:\Users\PussyDominator\Documents\GitHub\Study\New_project\obj\Debug\netcoreapp3.1\New_project.genruntimeconfig.cache
