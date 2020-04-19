@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\PussyDominator\\Documents\\GitHub\\Study\\New_project\\New_project.csproj": {}
+    "C:\\users\\pussydominator\\documents\\github\\study\\new_project\\New_project.csproj": {}
   },
   "projects": {
-    "C:\\Users\\PussyDominator\\Documents\\GitHub\\Study\\New_project\\New_project.csproj": {
+    "C:\\users\\pussydominator\\documents\\github\\study\\new_project\\New_project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PussyDominator\\Documents\\GitHub\\Study\\New_project\\New_project.csproj",
+        "projectUniqueName": "C:\\users\\pussydominator\\documents\\github\\study\\new_project\\New_project.csproj",
         "projectName": "New_project",
-        "projectPath": "C:\\Users\\PussyDominator\\Documents\\GitHub\\Study\\New_project\\New_project.csproj",
+        "projectPath": "C:\\users\\pussydominator\\documents\\github\\study\\new_project\\New_project.csproj",
         "packagesPath": "C:\\Users\\PussyDominator\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PussyDominator\\Documents\\GitHub\\Study\\New_project\\obj\\",
+        "outputPath": "C:\\users\\pussydominator\\documents\\github\\study\\new_project\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
