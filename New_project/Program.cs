@@ -97,7 +97,7 @@ namespace New_project
 
 
 
-    class Program
+    partial class Program
     {
         const string path="filemes.txt";
         static void DisplayMessage(object sender,AccountEventArgs e)
@@ -114,7 +114,7 @@ namespace New_project
             }
             System.Console.WriteLine("File has updated");
         }
-        static void Main(string[] args)
+        static void Main1(string[] args)
         {
             using(File.Create(path))
             {}
