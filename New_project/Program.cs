@@ -40,17 +40,17 @@ namespace New_project
                 return _name;
             }
         }
-        public delegate void _notifyer(object sender, AccountEventArgs e);
-        private event _notifyer n;
-        public event _notifyer Notifyer{
+        //public delegate void _notifyer(object sender, AccountEventArgs e);
+        private event EventHandler<AccountEventArgs> n;
+        public event EventHandler<AccountEventArgs> Notifyer{
             add
             {
-                n+=new _notifyer(value);
+                n+=new EventHandler<AccountEventArgs>(value);
                 System.Console.WriteLine($"{value.Method.Name} added");
             }
             remove
             {
-                n-=new _notifyer(value);
+                n-=new EventHandler<AccountEventArgs>(value);
                 System.Console.WriteLine($"{value.Method.Name} removed");
             }
         }
@@ -123,6 +123,7 @@ namespace New_project
             acc.Add(30);
             acc.Remove(10);
             
+            acc.Notifyer+=FileMessage;
             string[] ss=acc.GetRegisteredMethods();
             System.Console.WriteLine("\nMethods:");
             for(int i=0;i<ss.Length;i++)
@@ -130,7 +131,7 @@ namespace New_project
                 System.Console.WriteLine(" "+ss[i]);
             }
             System.Console.WriteLine();
-            acc.Notifyer+=FileMessage;
+            
             acc.Add(-10);
             acc.Remove(30);
             acc.Notifyer-=DisplayMessage;
