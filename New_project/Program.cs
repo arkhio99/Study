@@ -2,47 +2,83 @@
 
 namespace New_project
 {
-    delegate int function(int x);
-
-    
+    class Account
+    {
+        private int _sum;
+        private readonly string _name;
+        public int Sum{
+            get
+            {
+                return _sum;
+            }
+        }
+        public string Name{
+            get{
+                return _name;
+            }
+        }
+        public delegate void _notifyer(string s);
+        private event _notifyer n;
+        public event _notifyer Notifyer{
+            add
+            {
+                n+=new _notifyer(value);
+                System.Console.WriteLine($"{value.Method.Name} added");
+            }
+            remove
+            {
+                n-=new _notifyer(value);
+                System.Console.WriteLine($"{value.Method.Name} removed");
+            }
+        }
+        public Account(string n)
+        {
+            _name=n;
+            _sum=0;
+        }
+        public void Add(int delta)
+        {
+            if(delta>0)
+            {
+                _sum+=delta;
+                n?.Invoke($"Added {delta}$");
+            }
+            else
+            {
+                n?.Invoke("Sum is under 0");
+            }
+        }
+        public void Remove(int delta)
+        {
+            if(delta>0&&delta<=_sum)
+            {
+                _sum-=delta;
+                n?.Invoke($"Removed {delta}$");
+            }
+            else{
+                n?.Invoke("Impossible");
+            }
+        } 
+        
+    }    
 
 
 
     class Program
     {
-        static int[] ArOfFunction(int[] x, function f)
-    {
-        int[] res=new int[x.Length];
-        for(int i=0;i<x.Length;i++)
+        static void ShowMes(string s)
         {
-            res[i]=f(x[i]);
+            System.Console.WriteLine(s);
         }
-        return res;
-    }
         static void Main(string[] args)
         {
-            function f=delegate(int x)
-            {
-                return x*x;
-            };
-            int[] x=new int[10]
-            {
-                1,2,3,4,5,6,7,8,9,10
-            };
-            int[] sqrs=ArOfFunction(x,f);
-            for(int i=0;i<sqrs.Length;i++)
-            {
-                System.Console.Write(sqrs[i].ToString()+" ");
-            }
-            System.Console.WriteLine("\n");
-            int[] cubes=ArOfFunction(x,delegate(int x) 
-            {
-                return x*x*x;
-            });
-            for(int i=0;i<cubes.Length;i++)
-            {
-                System.Console.Write(cubes[i].ToString()+" ");
-            }
+            Account acc=new Account("Andrew");
+            acc.Notifyer+=ShowMes;
+            acc.Add(30);
+            acc.Remove(10);
+            acc.Add(-10);
+            acc.Remove(30);
+            acc.Notifyer-=ShowMes;
         }
     }
 }
