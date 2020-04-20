@@ -114,7 +114,7 @@ namespace New_project
             }
             System.Console.WriteLine("File has updated");
         }
-        static void Main1(string[] args)
+        static void Main(string[] args)
         {
             using(File.Create(path))
             {}

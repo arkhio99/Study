@@ -11,7 +11,7 @@ namespace New_project
     } 
     partial class Program
     {
-        static void Main(string[] args)
+        static void Main1(string[] args)
         {
             cw.
         }
