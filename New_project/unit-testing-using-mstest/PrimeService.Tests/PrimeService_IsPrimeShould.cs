@@ -6,20 +6,10 @@ namespace Prime.UnitTests.Services
     [TestClass]
     public class PrimeService_IsPrimeShould
     {
-        private readonly PrimeService _primeService;
-
-        public PrimeService_IsPrimeShould()
+        [TestMethod]
+        public void Test1()
         {
-            _primeService = new PrimeService();
-        }
-
-        [DataTestMethod]
-        [DataRow(-1), DataRow(0), DataRow(1)]
-        public void IsPrime_InputIs1_ReturnFalse(int value)
-        {
-            var result = _primeService.IsPrime(value);
-
-            Assert.IsFalse(result, "1 should not be prime");
+            Assert.AreEqual(8.3101,PrimeService.Parsing("8,3101"),0.01);
         }
     }
 }

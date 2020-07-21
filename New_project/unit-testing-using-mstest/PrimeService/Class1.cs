@@ -2,15 +2,11 @@
 
 namespace PrimeServices
 {
-    public class PrimeService
+    public static class PrimeService
     {
-        public bool IsPrime(int candidate)
+        public static double Parsing(string str)
         {
-            if (candidate < 2)
-            {
-                return false;
-            }
-            throw new NotImplementedException("Please create a test first.");
+            return double.Parse(str);
         }
     }
 }
