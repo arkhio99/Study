@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "cqENALaEgNHt8Mg72OsmnthrU6AoDgXts1fo708hRGgUeOZs9cz9RB2e2BrNrrCA5lMIwoO7rc2D1ss4qZXHwQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\PussyDominator\\Documents\\GitHub\\Study\\New_project\\unit-testing-using-mstest\\PrimeService\\PrimeService.csproj",
+  "expectedPackageFiles": [
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\PussyDominator\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
